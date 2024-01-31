@@ -20,6 +20,7 @@ class _TopPickPartState extends State<TopPickPart> {
     super.initState();
     _controller = ScrollController(
       initialScrollOffset: 845 * widget.widthRatio / 2,
+
     );
   }
 
@@ -84,7 +85,7 @@ class _TopPickPartState extends State<TopPickPart> {
             child: ListView.builder(
               itemCount: GlobalVariable.ytvideo.length,
               scrollDirection: Axis.horizontal,
-              controller: _controller,
+             controller: _controller,
               itemBuilder: (context, index) {
                 return Padding(
                   padding: EdgeInsets.only(
@@ -93,70 +94,65 @@ class _TopPickPartState extends State<TopPickPart> {
                   child: Material(
                     elevation: 10,
                     shadowColor: Colors.grey.shade200,
-                    child: InkWell(
-                      onTap: () {
-                        // showVideo();
-                      },
-                      child: Container(
-                        width: 210 * widget.widthRatio,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            border: Border.all(
-                              color: Colors.grey.shade200,
-                            )),
-                        child: Stack(
-                          children: [
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: 6 * widget.widthRatio,
-                                  top: 10 * widget.heightRatio,
-                                  right: 4 * widget.widthRatio),
-                              child: SizedBox(
-                                height: 210 * widget.heightRatio,
-                                width: 210 * widget.widthRatio,
-                                child: Image.asset(
-                                    GlobalVariable.ytvideo[index]["image"]!),
+                    child: Container(
+                      width: 210 * widget.widthRatio,
+                      decoration: BoxDecoration(
+                          color: Colors.white,
+                          border: Border.all(
+                            color: Colors.grey.shade200,
+                          )),
+                      child: Stack(
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.only(
+                                left: 6 * widget.widthRatio,
+                                top: 10 * widget.heightRatio,
+                                right: 4 * widget.widthRatio),
+                            child: SizedBox(
+                              height: 210 * widget.heightRatio,
+                              width: 210 * widget.widthRatio,
+                              child: Image.asset(
+                                  GlobalVariable.ytvideo[index]["image"]!),
+                            ),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(
+                                left: 80 * widget.widthRatio,
+                                top: 90.0 * widget.heightRatio),
+                            child: SizedBox(
+                              height: 60 * widget.heightRatio,
+                              width: 60 * widget.widthRatio,
+                              child: Image.asset(
+                                "assets/images/youtube.png",
+                                fit: BoxFit.contain,
                               ),
                             ),
-                            Padding(
-                              padding: EdgeInsets.only(
-                                  left: 80 * widget.widthRatio,
-                                  top: 90.0 * widget.heightRatio),
-                              child: SizedBox(
-                                height: 60 * widget.heightRatio,
-                                width: 60 * widget.widthRatio,
-                                child: Image.asset(
-                                  "assets/images/youtube.png",
-                                  fit: BoxFit.contain,
-                                ),
-                              ),
+                          ),
+                          carNameText(
+                            width: 16 * widget.widthRatio,
+                            height: 240.0 * widget.heightRatio,
+                            text: GlobalVariable.ytvideo[index]["name"]!,
+                            textStyle: GoogleFonts.blackOpsOne(
+                              color: const Color(0xFF848484),
+                              fontSize: 24 * widget.heightRatio,
+                              fontWeight: FontWeight.w800,
+                              height: 0,
+                              letterSpacing: 0.22,
                             ),
-                            carNameText(
-                              width: 16 * widget.widthRatio,
-                              height: 240.0 * widget.heightRatio,
-                              text: GlobalVariable.ytvideo[index]["name"]!,
-                              textStyle: GoogleFonts.blackOpsOne(
-                                color: const Color(0xFF848484),
-                                fontSize: 24 * widget.heightRatio,
-                                fontWeight: FontWeight.w800,
-                                height: 0,
-                                letterSpacing: 0.22,
-                              ),
+                          ),
+                          carNameText(
+                            width: 16 * widget.widthRatio,
+                            height: 280.0 * widget.heightRatio,
+                            text: GlobalVariable.ytvideo[index]["subtitle"]!,
+                            textStyle: GoogleFonts.lato(
+                              color: Colors.black,
+                              fontSize: 16 * widget.heightRatio,
+                              fontWeight: FontWeight.w500,
+                              height: 0,
+                              letterSpacing: 0.18,
                             ),
-                            carNameText(
-                              width: 16 * widget.widthRatio,
-                              height: 280.0 * widget.heightRatio,
-                              text: GlobalVariable.ytvideo[index]["subtitle"]!,
-                              textStyle: GoogleFonts.lato(
-                                color: Colors.black,
-                                fontSize: 16 * widget.heightRatio,
-                                fontWeight: FontWeight.w500,
-                                height: 0,
-                                letterSpacing: 0.18,
-                              ),
-                            ),
-                          ],
-                        ),
+                          ),
+                        ],
                       ),
                     ),
                   ),

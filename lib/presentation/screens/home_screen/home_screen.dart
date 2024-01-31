@@ -186,11 +186,11 @@ class HomeScreen extends StatelessWidget {
               //top pick part
               Stack(
                 children: [
-                  TopPickPart(widthRatio: widthRatio, heightRatio: heightRatio),
                   Padding(
                     padding: EdgeInsets.only(top: 20.0 * heightRatio),
                     child: Image.asset("assets/images/road.png"),
                   ),
+                  TopPickPart(widthRatio: widthRatio, heightRatio: heightRatio),
                   //new update part
                   Padding(
                     padding: EdgeInsets.only(top: 450.0 * heightRatio),
