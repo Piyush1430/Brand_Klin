@@ -1,16 +1,14 @@
-# rathamansion
+# BRAND KLIN 
 
-A new Flutter project.
+# App Screenshots
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Welcome Page](app_screenshots/1.png)
+![LoginPage Page](app_screenshots/2.png)
+![SignUp Page](app_screenshots/3.png)
+![landing Page](app_screenshots/4.png)
+![](app_screenshots/5.png)
+![](app_screenshots/6.png)
+![](app_screenshots/7.png)
+![](app_screenshots/8.png)
+![](app_screenshots/9.png)
+![](app_screenshots/10.png)
