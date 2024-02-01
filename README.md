@@ -1,16 +1,44 @@
-# rathamansion
+# BRAND KLIN 
+# App Video
 
-A new Flutter project.
 
-## Getting Started
+# App Screenshots
+# Welcome Screen
+<p align="center">
+  <img  height="400" src="app_screenshots/1.png">
+</p>
 
-This project is a starting point for a Flutter application.
+# Log-In Screen
+<p align="center">
+  <img  height="400" src="app_screenshots/2.png">
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+# Sign-up screen
+<p align="center">
+  <img  height="400" src="app_screenshots/3.png">
+</p>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Home Screen
+<p align="center">
+  <img  height="400" src="app_screenshots/4.png">
+</p>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p align="center">
+  <img  height="400" src="app_screenshots/5.png">
+</p>
+<p align="center">
+  <img  height="400" src="app_screenshots/6.png">
+</p>
+<p align="center">
+  <img  height="400" src="app_screenshots/7.png">
+</p>
+<p align="center">
+  <img  height="400" src="app_screenshots/8.png">
+</p>
+<p align="center">
+  <img  height="400" src="app_screenshots/9.png">
+</p>
+<p align="center">
+  <img  height="400" src="app_screenshots/10.png">
+</p>
+
